@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My account</title>
+    <link rel="stylesheet" href="edit-account.css" />
+</head>
+
+<body>
+    <div id="account">
+        <div id="account-container">
+            <img src="../logos/logo_yard_sale.svg" alt="logo" id="yard-sale-logo" />
+
+            <h1 id="title">My account</h1>
+
+            <form action="" id="form-container">
+                <label for="input-name" class="label">Name</label>
+                <input type="text" placeholder="Bruce Wayne" class="input" id="input-name" required />
+
+                <label for="input-email" class="label">Email address</label>
+                <input type="email" placeholder="batman@wayne.com" class="input" id="input-email" required />
+
+                <label for="input-password" class="label">Password</label>
+                <input type="password" placeholder="********" class="input" id="input-password" required />
+
+                <div id="edit-container">
+                    <label for="edit-button">
+                        <input type="submit" class="primary-button" id="edit-button" value="Edit" />
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="edit-account.js"></script>
+</body>
+
+</html>

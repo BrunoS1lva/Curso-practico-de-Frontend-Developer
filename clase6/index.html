@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yard Sale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="main-container">
+        <header>
+            <picture id="yard-sale-logo">
+                <img src="../logos/logo_yard_sale.svg" alt="Yard sale logo" />
+            </picture>
+            <ul>
+                <li>All</li>
+                <li>Clothes</li>
+                <li>Electronics</li>
+                <li>Furniture</li>
+                <li>Toys</li>
+                <li>Others</li>
+            </ul>
+            <p id="user-email">email@example.com</p>
+            <img src="../icons/icon_shopping_cart.svg" alt="shopping-cart-icon" />
+        </header>
+
+        <nav id="navbar">
+
+            <form action="/" method="get">
+                <div class="search-container">
+                    <input type="text" name="query" placeholder="Search product" />
+                </div>
+            </form>
+
+            <section id="order-container">
+                <label for="order-selection">Order:</label>
+                <select id="order-selection">
+                    <option value="name">Name</option>
+                    <option value="lower-price">Lower price</option>
+                    <option value="higher-price">Higher price</option>
+                    <option value="most-recent">Most recent</option>
+                </select>
+            </section>
+
+        </nav>
+
+        <section id="cards-container">
+
+            <div id="product1" class="products-card">
+
+                <div class="product-icon">
+                    <img src="../icons/camera.jpg" alt="product" class="products" />
+                </div>
+
+                <div id="details">
+                    <div class="info">
+                        <p>$120,00</p>
+                        <p>Camera</p>
+                    </div>
+                    <figure class="cart-icon">
+                        <img src="../icons/bt_add_to_cart.svg" alt="product" class="add-to-cart-icon" />
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

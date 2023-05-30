@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a new password</title>
+    <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-container">
+            <img src="../logos/logo_yard_sale.svg" alt="logo" id="yardsale-logo" />
+
+            <form action="/" id="form-container">
+                <label for="email" class="label">Email address</label>
+                <input type="email" placeholder="somebody@dom.com" id="email"  required />
+
+                <label for="password" class="label">Password</label>
+                <input type="password" placeholder="********" id="password" required />
+
+                <label for="login-button">
+                    <input type="submit" class="primary-button button" id="login-button" value="Log in" />
+                </label>
+            </form>
+            <p>
+                <span id="forgot-password-span">
+                    <a href="/" target="_blank" title="Clic here if you forgot your password"
+                        id="forgot-password-anchor">Forgot my password</a>
+                </span>
+            </p>
+            <button id="signup-button">Sign up</button>
+        </div>
+    </div>
+</body>
+
+</html>

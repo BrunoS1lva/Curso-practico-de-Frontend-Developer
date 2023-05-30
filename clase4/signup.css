@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+:root {
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --white: #ffffff;
+    --black: #000000;
+    --flarge: 18px;
+    --fmedium: 16px;
+    --fsmall: 14px;
+}
+
+body {
+    font-family: "Quicksand";
+    margin: 0;
+}
+
+#account {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#account-container {
+    width: 300px;
+}
+
+#yard-sale-logo {
+    display: none;
+}
+
+#title {
+    font-size: var(--flarge);
+    text-align: start;
+}
+
+#form-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label,
+.input {
+    width: 300px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding: 4px;
+    font-size: var(--fsmall);
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input {
+    height: 20px;
+    margin-left: 5px;
+}
+
+#create-button {
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: var(--hospital-green);
+    color: var(--text-input-field);
+    font-family: inherit;
+    font-size: var(--fmedium);
+}
+
+
+@media (max-width: 640px) {
+    /* #yard-sale-logo {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 40%;
+        right: 40%;
+    } */
+
+    #create-button {
+        margin-top: 300px;
+        border: 0;
+        background-color: var(--hospital-green);
+        color: var(--text-input-field);
+        font-family: inherit;
+        font-weight: 500;
+        font-size: var(--fmedium);
+    }
+}
